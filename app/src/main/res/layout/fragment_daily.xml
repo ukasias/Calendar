@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DailyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff">
+        <Button
+            android:id="@+id/dayPrevious"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backward"
+            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/dayText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="dayView"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/dayNext"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/forward"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffbbbbbb">
+        <ListView
+            android:id="@+id/dailySchedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/week_back_line"
+            android:layout_margin="1dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
